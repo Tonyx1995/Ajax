@@ -1,0 +1,88 @@
+@media all and (max-width: 329px) {
+    /* hide it on anything less than a small phones width (329) */
+    .displaySpaceTiny{ display: none; visibility: hidden; }
+}
+@media all and (max-width: 426px) {
+    /* hide it on anything less than a large phones width (426) */
+    .displaySpaceSmall{ display: none; visibility: hidden; }
+}
+@media all and (max-width: 768px) {
+    /* hide it on anything less than a tablets width (768) */
+    .displaySpace{ display: none; visibility: hidden; }
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.padded-light{
+    padding: 5px;
+}
+.padded-medium{
+    padding: 10px;
+}
+.padded-heavy{
+    padding: 15px;
+}
+.padded-heavy-bottom{
+    padding-bottom: 35px;
+}
+.padded-form{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.red{
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    background-image:url('BG_1_app.jpg');
+}
+
+th{
+    background-color: #6CBB3C;
+}
+
+/* Fixes modal scrolling errors */
+.modal{
+    overflow-y: scroll;
+}
+/* For modal styling
+.modal-header, .modal-footer, .modal-body{
+    background-color: #6CBB3C;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.modal-body .input-group-addon{
+    color: black;
+    text-shadow: none;
+}
+
+.modal-body .fa, .glyphicon{
+    color: black;
+}
+
+.modal-header{
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 9px 15px;
+    border-bottom: 1px solid khaki;
+}
+
+.modal-footer{
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 9px 15px;
+    border-top: 1px solid khaki;
+}*/

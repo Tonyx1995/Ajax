@@ -1,0 +1,12 @@
+The very vast majority of javascript and jQuery is contained under lib/Scripts/JSFunctions.js.
+
+The setup of this project is mainly giving divs classes and IDs and selecting them via jQuery, calling a php script under root/ajaxFunctions.php
+and passing along something in the querystring to decide which query to run and return. After something is returned, we populate it with a callback function
+in the ajax method. That is how most of the project is built.
+
+Some php methods that are to be called over and over (not via ajax) are declared as static methods under lib/PHP/functions.php (such as thumbnail rendering)
+
+
+In ajaxFunctions, under action == "displaybyid" we set a ?123 after the newly updated pic, this is to display the new image because if we don't have some new identifier, the old image
+is cached and will continue to display. However; if we update an item after giving it a new image, sometimes it'll glitch out and go back. Need a more graceful way of handling this.
+Maybe a timestamp after the image?
